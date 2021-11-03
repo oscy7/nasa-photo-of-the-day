@@ -8,7 +8,6 @@ import BigComponent from './components/componentOne'
 
 function App() {
   const [nasaData, setNasaData] = useState('')
- //`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`
   useEffect( () => {
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=rnBTrhDY0lTA80dKgBcBESX5zleFVY01aYWrR7vd`)
     .then(res => {
@@ -20,9 +19,6 @@ function App() {
       console.error(err)
     })
   }, []);
-
-
-{/* <BigComponent /> */}
 
   return (
     <div className="App">
